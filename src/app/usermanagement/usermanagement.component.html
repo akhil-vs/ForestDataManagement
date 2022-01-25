@@ -1,0 +1,97 @@
+<div class="card mt-4">
+    <h4 class="card-header">Manage Users</h4>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                <p-panel header="New User">
+                    <!-- <h4 class="card-header">Register</h4> -->
+                    <div class="card-body">
+                        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+                                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                                    <div *ngIf="f.name.errors.required">Name is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.email.errors.required">Email is required</div>
+                                    <div *ngIf="f.email.errors.email">Not an email</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                    <div *ngIf="f.password.errors.minlength">Password must be at least 4 characters</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+                                <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                                    <div *ngIf="f.confirmPassword.errors.minlength">Password must be at least 4 characters</div>
+                                    <div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label>Role</label> -->
+                                <label *ngFor="let role of roles" class="mx-1">
+                                    <input value="{{role}}" type="radio" formControlName="role" [ngClass]="{ 'is-invalid': submitted && f.role.errors }"> {{role}}
+                                </label>
+                                <div *ngIf="submitted && f.role.errors" class="invalid-feedback">
+                                    <div *ngIf="f.role.errors.required">Role is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button [disabled]="loading" class="btn btn-primary mx-1">
+                                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                                    Register
+                                </button>
+                                <button class="btn btn-light mx-1" (click)="onReset()">
+                                    Reset
+                                </button>
+                            </div>
+                        </form>
+                        <span class="text-danger">{{regMessage}}</span>
+                    </div>
+                </p-panel>
+            </div>
+            <div class="col-6">
+                <p-panel header="Existing Users">
+                    <p-table #dt1 [value]="allUsers" [globalFilterFields]="['name','email','role']">
+                        <ng-template pTemplate="caption">
+                            <div>
+                                <span class="p-input-icon-left ml-auto">
+                                    <i class="pi pi-search"></i>
+                                    <input pInputText type="text" (input)="dt1.filterGlobal($event.target.value, 'contains')" />
+                                </span>
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th *ngFor="let col of cols" [pSortableColumn]="col.field" pResizableColumn pReorderableColumn>
+                                    {{col.header}}
+                                    <p-sortIcon [field]="col.field"></p-sortIcon>
+                                </th>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-user>
+                            <tr>
+                                <td *ngFor="let col of cols">
+                                        {{user[col.field]}}
+                                </td>
+                            </tr>
+                        </ng-template>
+                    </p-table>
+                </p-panel>
+            </div>
+        </div>
+        
+    </div>
+</div>

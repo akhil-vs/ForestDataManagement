@@ -1,0 +1,1160 @@
+{
+    "approved": false,
+    "approved_date": "2021-12-30",
+    "user": {
+        "id": 12,
+        "name": "John Cox",
+        "submit_date": "2021-12-28",
+        "update_date": null,
+        "updated_by": null
+    },
+    "month": "jan",
+    "year": null,
+    "circle": "c1",
+    "division": null,
+    "hoa": "a1",
+    "data":
+    [  
+        {  
+            "data":{  
+                "id": "1.1",
+                "name":"Construction of civil structures",
+                "unit":"",
+                "type":"Folder"
+            },
+            "children":[  
+                {  
+                    "data":{  
+                        "id": "1.1.1",
+                        "name":"Buildings",
+                        "unit":"",
+                        "type":"Folder"
+                    },
+                    "children":[  
+                        {  
+                            "data":{  
+                                "id": "1.1.1.1",
+                                "name":"Office Buildings",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.1",
+                                        "name":"Forest Headquarters",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.2",
+                                        "name":"Circle Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.3",
+                                        "name":"Division Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.4",
+                                        "name":"Range Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.5",
+                                        "name":"Forest Station",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.6",
+                                        "name":"Section Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.7",
+                                        "name":"Beat Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.1.8",
+                                        "name":"Office Building",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "data":{  
+                                "id": "1.1.1.2",
+                                "name":"Residential Buildings",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.2.1",
+                                        "name":"Cmp Sheds",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.2.2",
+                                        "name":"Quarters",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.2.3",
+                                        "name":"Barrack",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.2.4",
+                                        "name":"Dormitory",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.2.5",
+                                        "name":"Inspection Bunglow",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "data":{ 
+                                "id": "1.1.1.3", 
+                                "name":"Other Buildings",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.1", 
+                                        "name":"Strong Room",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.2",
+                                        "name":"CheckPost",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.3",
+                                        "name":"Vehicle Shed",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.4",
+                                        "name":"Firewood Shed",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.5",
+                                        "name":"Community Hall",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.6",
+                                        "name":"Eco-Tourism Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.7",
+                                        "name":"Interpretation Centre",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.8",
+                                        "name":"Museum",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.9",
+                                        "name":"Eco Shop",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.10",
+                                        "name":"Ticket Counter",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.11",
+                                        "name":"Animal Rescue Centre",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.12",
+                                        "name":"Gymnasium",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.13",
+                                        "name":"Hospice",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.14",
+                                        "name":"Mess Hall",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.15",
+                                        "name":"Kitchen",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.16",
+                                        "name":"Canteen",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.1.3.17",
+                                        "name":"Bath rooms and Toilet",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {  
+                    "data":{  
+                        "id": "1.1.2",
+                        "name":"Construction of other civil structures",
+                        "unit":"",
+                        "type":"Folder"
+                    },
+                    "children":[  
+                        {  
+                            "data":{  
+                                "id": "1.1.2.1",
+                                "name":"General works",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.1.1",
+                                        "name":"Permanent Cairns",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.1.2",
+                                        "name":"Check dams",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.1.3",
+                                        "name":"Culverts",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.1.4",
+                                        "name":"Compound Wall",
+                                        "unit":"Metre",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.1.5",
+                                        "name":"Watch Towers",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.1.6",
+                                        "name":"Erecting pre fabricated structures",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.1.7",
+                                        "name":"Gully Plugging",
+                                        "unit":"cu.m",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "data":{  
+                                "id": "1.1.2.2",
+                                "name":"MRMAC works",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.2.1",
+                                        "name":"Solar Fencing",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.2.2",
+                                        "name":"Crash-guard rope fencing",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.2.3",
+                                        "name":"Elephant Proof Wall",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.2.4",
+                                        "name":"Steel fencing",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.1.2.2.5",
+                                        "name":"Trench",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {  
+                    "data":{  
+                        "id": "1.1.3",
+                        "name":"Construction of Coupe Roads",
+                        "unit":"Km",
+                        "type":"Folder"
+                    }
+                },
+                {  
+                    "data":{  
+                        "id": "1.1.4",
+                        "name":"Construction of Kayyala",
+                        "unit":"Km",
+                        "type":"Folder"
+                    }
+                },
+                {  
+                    "data":{  
+                        "id": "1.1.5",
+                        "name":"Construction of Ponds",
+                        "unit":"Nos",
+                        "type":"Folder"
+                    }
+                },
+                {  
+                    "data":{  
+                        "id": "1.1.6",
+                        "name":"Construction of Trek Paths",
+                        "unit":"Km",
+                        "type":"Folder"
+                    }
+                },
+                {  
+                    "data":{  
+                        "id": "1.1.7",
+                        "name":"Construction of Water Holes",
+                        "unit":"Nos",
+                        "type":"Folder"
+                    }
+                }
+            ]
+        },
+        {  
+            "data":{  
+                "id": "1.2",
+                "name":"Maintenance of civil structures",
+                "unit":"",
+                "type":"Folder"
+            },
+            "children":[  
+                {  
+                    "data":{ 
+                        "id": "1.2.1",
+                        "name":"Buildings",
+                        "unit":"",
+                        "type":"Folder"
+                    },
+                    "children":[  
+                        {  
+                            "data":{  
+                                "id": "1.2.1.1",
+                                "name":"Office Buildings",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.1.1",
+                                        "name":"Forest Headquarters",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.1.2",
+                                        "name":"Circle Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{ 
+                                        "id": "1.2.1.1.3", 
+                                        "name":"Division Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.1.4",
+                                        "name":"Range Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.1.5",
+                                        "name":"Forest Station",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.1.6",
+                                        "name":"Section Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.1.7",
+                                        "name":"Beat Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{ 
+                                        "id": "1.2.1.1.8", 
+                                        "name":"Office Building",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "data":{  
+                                "id": "1.2.1.2",
+                                "name":"Residential Buildings",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.2.1",
+                                        "name":"Cmp Sheds",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.2.2",
+                                        "name":"Quarters",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.2.3",
+                                        "name":"Barrack",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.2.4",
+                                        "name":"Dormitory",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.2.5",
+                                        "name":"Inspection Bunglow",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "data":{  
+                                "id": "1.2.1.3",
+                                "name":"Other Buildings",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.1",
+                                        "name":"Strong Room",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.2",
+                                        "name":"CheckPost",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.3",
+                                        "name":"Vehicle Shed",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.4",
+                                        "name":"Firewood Shed",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.5",
+                                        "name":"Community Hall",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.6",
+                                        "name":"Eco-Tourism Office",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.7",
+                                        "name":"Interpretation Centre",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.8",
+                                        "name":"Museum",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.9",
+                                        "name":"Eco Shop",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.10",
+                                        "name":"Ticket Counter",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.11",
+                                        "name":"Animal Rescue Centre",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.12",
+                                        "name":"Gymnasium",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.13",
+                                        "name":"Hospice",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.14",
+                                        "name":"Mess Hall",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.15",
+                                        "name":"Kitchen",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.16",
+                                        "name":"Canteen",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.1.3.17",
+                                        "name":"Bath rooms and Toilet",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {  
+                    "data":{  
+                        "id": "1.2.2",
+                        "name":"Maintenance of other civil structures",
+                        "unit":"",
+                        "type":"Folder"
+                    },
+                    "children":[  
+                        {  
+                            "data":{  
+                                "id": "1.2.2.1",
+                                "name":"General works",
+                                "unit":"No",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.1.1",
+                                        "name":"Permanent Cairns",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.1.2",
+                                        "name":"Check dams",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.1.3",
+                                        "name":"Culverts",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.1.4",
+                                        "name":"Compound Wall",
+                                        "unit":"Metre",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{ 
+                                        "id": "1.2.2.1.5", 
+                                        "name":"Watch Towers",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.1.6",
+                                        "name":"Erecting pre fabricated structures",
+                                        "unit":"No",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.1.7",
+                                        "name":"Gully Plugging",
+                                        "unit":"cu.m",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "data":{  
+                                "id": "1.2.2.2",
+                                "name":"MRMAC works",
+                                "unit":"",
+                                "type":"Application"
+                            },
+                            "children":[
+                                {  
+                                    "data":{ 
+                                        "id": "1.2.2.2.1", 
+                                        "name":"Solar Fencing",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.2.2",
+                                        "name":"Crash-guard rope fencing",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.2.3",
+                                        "name":"Elephant Proof Wall",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.2.4",
+                                        "name":"Steel fencing",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                },
+                                {  
+                                    "data":{  
+                                        "id": "1.2.2.2.5",
+                                        "name":"Trench",
+                                        "unit":"Km",
+                                        "type":"Application"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        
+        {  
+            "data":{  
+                "id": "1.3",
+                "name":"Maintenance of Coupe Roads",
+                "unit":"Km",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.4",
+                "name":"Maintenance of Kayyala",
+                "unit":"Km",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{ 
+                "id": "1.5", 
+                "name":"Maintenance of Ponds",
+                "unit":"No",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.6",
+                "name":"Maintenance of Trek Paths",
+                "unit":"Km",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.7",
+                "name":"Maintenance of Water Holes",
+                "unit":"No",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.8",
+                "name":"Desitling of ponds / Checkdams",
+                "unit":"No",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.9",
+                "name":"Eradication of weeds",
+                "unit":"Ha",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.10",
+                "name":"Fireline creation",
+                "unit":"Km",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.11",
+                "name":"Vista Clearance",
+                "unit":"Km",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.12",
+                "name":"Ganja raids",
+                "unit":"Nos",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.13",
+                "name":"Legal support",
+                "unit":"LS",
+                "type":"Folder"
+            }
+        },
+        {  
+            "data":{  
+                "id": "1.14",
+                "name":"Maintenance of Computers, peripherals and other items",
+                "unit":"",
+                "type":"Folder"
+            },
+            "children" : [
+                {
+                    "data":{  
+                        "id": "1.14.1",
+                        "name":"Maintenance of Computers",
+                        "unit":"No",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.14.2",
+                        "name":"Maintenance of Photocopiers",
+                        "unit":"No",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.14.3",
+                        "name":"Maintenance of Printers",
+                        "unit":"No",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.14.4",
+                        "name":"Maintenance of Mutifunction device",
+                        "unit":"No",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.14.5",
+                        "name":"Maintenance of electrical equipments",
+                        "unit":"No",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.14.6",
+                        "name":"Maintenance of lifts",
+                        "unit":"No",
+                        "type":"Folder"
+                    }
+                }
+            ]
+        },
+        {
+            "data":{  
+                "id": "1.15",
+                "name":"Maintenance of vehicles including boats",
+                "unit":"LS",
+                "type":"Folder"
+            }
+        },
+        {
+            "data":{  
+                "id": "1.16",
+                "name":"POL charges for vehicles including boats",
+                "unit":"LS",
+                "type":"Folder"
+            }
+        },
+        {
+            "data":{  
+                "id": "1.17",
+                "name":"Telecommunication charges",
+                "unit":"LS",
+                "type":"Folder"
+            }
+        },
+        {
+            "data":{  
+                "id": "1.18",
+                "name":"Purchase of survey equipments",
+                "unit":"No",
+                "type":"Folder"
+            }
+        },
+        {
+            "data":{  
+                "id": "1.19",
+                "name":"Wages for Watchers/Mazdoor",
+                "unit":"",
+                "type":"Folder"
+            },
+            "children": [
+                {
+                    "data":{  
+                        "id": "1.19.1",
+                        "name":"Fire protection watcher",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.2",
+                        "name":"Antipoaching watcher",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.3",
+                        "name":"Protection watcher",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.4",
+                        "name":"Daily waged watcher",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.5",
+                        "name":"Daily waged driver",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.6",
+                        "name":"Security",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.7",
+                        "name":"Computer Operator",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.8",
+                        "name":"Electrician",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.9",
+                        "name":"Mahout",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                },
+                {
+                    "data":{  
+                        "id": "1.19.10",
+                        "name":"Cavady",
+                        "unit":"MM",
+                        "type":"Folder"
+                    }
+                }
+            ]
+        }
+    ]
+}
