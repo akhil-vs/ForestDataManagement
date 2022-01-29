@@ -19,9 +19,11 @@ export class AuthenticationService {
         private http: HttpClient
     ) {
         this.userSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('user')));
-        this.userNameSubject = new BehaviorSubject<string>(JSON.parse(localStorage.getItem('user')).name);
         this.user = this.userSubject.asObservable();
-        this.userName = this.userNameSubject.asObservable();
+        if(localStorage.getItem('user') != undefined || localStorage.getItem('user') != null) {
+            this.userNameSubject = new BehaviorSubject<string>(JSON.parse(localStorage.getItem('user')).name);
+            this.userName = this.userNameSubject.asObservable();
+        }
     }
 
     public get userValue(): User {
