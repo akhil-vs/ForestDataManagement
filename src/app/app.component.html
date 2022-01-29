@@ -16,7 +16,7 @@
       <a class="navbar-brand" href="#">Hidden brand</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-            <a class="nav-item nav-link" routerLink="/">Home</a>
+            <a class="nav-item nav-link" *ngIf="isUser" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
@@ -25,7 +25,7 @@
             <a class="nav-item nav-link" routerLink="/usermanagement" *ngIf="isAdmin">Manage Users</a>
         </li>
         <li class="nav-item">
-            <a class="nav-item nav-link" (click)="logout()">Logout</a>
+            <a class="nav-item nav-link" *ngIf="isUser" (click)="logout()">Logout</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">

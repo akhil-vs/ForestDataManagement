@@ -1,8 +1,9 @@
 <div class="container-fluid d-flex justify-content-center">
     <div class="text-center">
       <H4>Monthly Progreess Report</H4>
-      <H4>Concurrent Evaluation and Monitoring Schemes 2021 - 22
-      <p-dropdown placeholder="Select Month" [options]="months" [(ngModel)]="selectedMonth" optionLabel="name"></p-dropdown></H4>
+      <H4>Concurrent Evaluation and Monitoring Schemes
+      <!-- <p-dropdown placeholder="Select Month" [options]="months" [(ngModel)]="selectedMonth" optionLabel="name"></p-dropdown> -->
+      <p-calendar [(ngModel)]="month" placeholder="Select Month" view="month" dateFormat="mm/yy" [readonlyInput]="true" inputId="monthpicker"></p-calendar></H4>
     </div>
   </div>
   <hr>
@@ -25,46 +26,48 @@
   <H4>Head of Account:</H4>
   </div> -->
   <hr>
-  <p-treeTable [value]="files1" [autoLayout]="true" id="treeTable">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Component</th>
-            <th>Unit</th>
-            <th>Physical Target</th>
-            <th>Physical Achievement</th>
-            <!-- <th>Financial Target</th> -->
-            <th>Financial Target [in Lakhs]</th>
-            <!-- <th>Financial Achievement</th> -->
-            <th>Financial Achievement [in Lakhs]</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
-        <tr [ttRow]="rowNode">
-            <td style="width: max-content;">
-                <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
-                {{rowData.id.replaceAll('-','.')}}. {{rowData.name}}
-            </td>
-            <td>
-              <label>{{rowData.unit}}</label>
-            </td>
-            <td>
-              <input [(ngModel)]="rowData['{{rowData.id}}pt']" id={{rowData.id}}pt type="text" placeholder="Physical Target" (blur)="setData(rowData.id,'pt', $event)">
-            </td>
-            <td>
-              <input [(ngModel)]="rowData['{{rowData.id}}pa']" id={{rowData.id}}pa type="text" placeholder="Physical Achievement" (blur)="setData(rowData.id,'pa', $event)">
-            </td>
-            <!-- <td><input type="text" placeholder="Financial Target"></td> -->
-            <td>
-              <input [(ngModel)]="rowData['{{rowData.id}}ft']" id={{rowData.id}}ft type="text" placeholder="Financial Target [in Lakhs]" (blur)="setData(rowData.id,'ft', $event)">
-            </td>
-            <!-- <td><input type="text" placeholder="Financial Achievement"></td> -->
-            <td>
-              <input [(ngModel)]="rowData['{{rowData.id}}fa']" id={{rowData.id}}fa type="text" placeholder="Financial Achievement [in Lakhs]" (blur)="setData(rowData.id,'fa', $event)">
-            </td>
-        </tr>
-    </ng-template>
-  </p-treeTable>
-  <div class="container-fluid row p-4">
-    <div class="col text-center px-4"><button type="button" class="p-3 btn btn-info" (click)="exportExcel()">Export as Excel</button></div>
-    <div class="col text-center px-4"><button type="button" class="p-3 btn btn-primary" (click)="submitForm()">Save</button></div>
+  <div *ngIf="showTable">
+    <p-treeTable [value]="files1" [autoLayout]="true" id="treeTable">
+      <ng-template pTemplate="header">
+          <tr>
+              <th>Component</th>
+              <th>Unit</th>
+              <th>Physical Target</th>
+              <th>Physical Achievement</th>
+              <!-- <th>Financial Target</th> -->
+              <th>Financial Target [in Lakhs]</th>
+              <!-- <th>Financial Achievement</th> -->
+              <th>Financial Achievement [in Lakhs]</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+          <tr [ttRow]="rowNode">
+              <td style="width: max-content;">
+                  <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
+                  {{rowData.id.replaceAll('-','.')}}. {{rowData.name}}
+              </td>
+              <td>
+                <label>{{rowData.unit}}</label>
+              </td>
+              <td>
+                <input [(ngModel)]="rowData['{{rowData.id}}pt']" id={{rowData.id}}pt type="text" placeholder="Physical Target" (blur)="setData(rowData.id,'pt', $event)">
+              </td>
+              <td>
+                <input [(ngModel)]="rowData['{{rowData.id}}pa']" id={{rowData.id}}pa type="text" placeholder="Physical Achievement" (blur)="setData(rowData.id,'pa', $event)">
+              </td>
+              <!-- <td><input type="text" placeholder="Financial Target"></td> -->
+              <td>
+                <input [(ngModel)]="rowData['{{rowData.id}}ft']" id={{rowData.id}}ft type="text" placeholder="Financial Target [in Lakhs]" (blur)="setData(rowData.id,'ft', $event)">
+              </td>
+              <!-- <td><input type="text" placeholder="Financial Achievement"></td> -->
+              <td>
+                <input [(ngModel)]="rowData['{{rowData.id}}fa']" id={{rowData.id}}fa type="text" placeholder="Financial Achievement [in Lakhs]" (blur)="setData(rowData.id,'fa', $event)">
+              </td>
+          </tr>
+      </ng-template>
+    </p-treeTable>
+    <div class="container-fluid row p-4">
+      <div class="col text-center px-4"><button type="button" class="p-3 btn btn-info" (click)="exportExcel()">Export as Excel</button></div>
+      <div class="col text-center px-4"><button type="button" class="p-3 btn btn-primary" (click)="submitForm()">Submit</button></div>
+    </div>
   </div>

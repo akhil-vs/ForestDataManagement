@@ -8,15 +8,22 @@ import { User, Role } from './_models';
 export class AppComponent {
     user: any;
     userName: string;
+    isUser: boolean = false;
 
     constructor(private authenticationService: AuthenticationService) {
-        this.authenticationService.user.subscribe(x => {
-            this.user = x;
-        });
-        this.authenticationService.userName.subscribe(x=> {
-            // console.log(x);
-            this.userName = x;
-        });
+        if(this.authenticationService.user != null) {
+            this.authenticationService.user.subscribe(x => {
+                this.user = x;
+                this.isUser = true;
+            });
+            this.authenticationService.userName.subscribe(x=> {
+                // console.log(x);
+                this.userName = x;
+            });
+        }
+        else {
+            this.isUser = false;
+        }
     }
 
     get isAdmin() {
@@ -25,5 +32,6 @@ export class AppComponent {
 
     logout() {
         this.authenticationService.logout();
+        this.isUser = false;
     }
 }

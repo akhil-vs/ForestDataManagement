@@ -6,6 +6,7 @@ import { ApiService } from '../_services/api.service';
 import { Workbook } from 'exceljs';
 import * as fs from 'file-saver';
 import { AuthenticationService } from '@app/_services';
+import { coerceNumberProperty } from '@angular/cdk/coercion';
 
 @Component({
   selector: 'app-user',
@@ -13,8 +14,9 @@ import { AuthenticationService } from '@app/_services';
   styleUrls: ['./user.component.less'],
 })
 export class UserComponent implements OnInit {
-  months: month[];
-  selectedMonth: month | undefined;
+  month: Date;
+  curMonth;
+  // selectedMonth: month | undefined;
 
   circles: Drops[];
   selectedCircle: Drops | undefined;
@@ -30,25 +32,27 @@ export class UserComponent implements OnInit {
 
   dataArray: any[] = [];
   
+  showTable: boolean = false;
+
   constructor(
     private nodeService: NodeService,
     private apiService: ApiService,
     private authService: AuthenticationService
   ) {
-    this.months = [
-      { name: 'January', code: 1 },
-      { name: 'February', code: 2 },
-      { name: 'March', code: 3 },
-      { name: 'April', code: 4 },
-      { name: 'May', code: 5 },
-      { name: 'June', code: 6 },
-      { name: 'July', code: 7 },
-      { name: 'August', code: 8 },
-      { name: 'September', code: 9 },
-      { name: 'October', code: 10 },
-      { name: 'November', code: 11 },
-      { name: 'December', code: 12 },
-    ];
+    // this.months = [
+    //   { name: 'January', code: 1 },
+    //   { name: 'February', code: 2 },
+    //   { name: 'March', code: 3 },
+    //   { name: 'April', code: 4 },
+    //   { name: 'May', code: 5 },
+    //   { name: 'June', code: 6 },
+    //   { name: 'July', code: 7 },
+    //   { name: 'August', code: 8 },
+    //   { name: 'September', code: 9 },
+    //   { name: 'October', code: 10 },
+    //   { name: 'November', code: 11 },
+    //   { name: 'December', code: 12 },
+    // ];
 
     this.circles = [
       { name: 'Southern Circle - Kollam', code: 'c1' },
@@ -83,14 +87,21 @@ export class UserComponent implements OnInit {
   }
 
   setJson() {
-    this.apiService.getPrevMonth(this.selectedMonth.code, 2021, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
+    // debugger;
+    console.log(this.month, this.selectedCircle, this.selectedHead);
+    if(this.month != undefined && this.selectedCircle != undefined && this.selectedHead != undefined) {
+      this.showTable = true;
+    }
+    this.curMonth = this.month.getMonth();
+    let prevMonth = this.month.getMonth() == 0 ? 11 : this.month.getMonth() - 1;
+    this.apiService.getPrevMonth(prevMonth, 2021, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
       (res) => {
         console.log(res);
       }, (err) => {
         console.log(err);
       }
     );
-    this.apiService.getCurrentMonth(this.selectedMonth.code, 2021, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
+    this.apiService.getCurrentMonth(this.curMonth, 2021, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
       (res) => {
         console.log(res);
       }, (err) => {
@@ -101,12 +112,12 @@ export class UserComponent implements OnInit {
   }
 
   submitForm() {
-    console.log(this.selectedMonth.code)
-    console.log(this.selectedCircle.code)
-    console.log(this.selectedDivision)
-    console.log(this.dataArray);
+    // console.log(this.selectedMonth.code)
+    // console.log(this.selectedCircle.code)
+    // console.log(this.selectedDivision)
+    // console.log(this.dataArray);
     let currentUser = this.authService.userValue;
-    this.apiService.submitForm(currentUser.id, this.selectedMonth.code, 2021, this.selectedCircle.code, null, this.selectedHead.code, this.dataArray)
+    this.apiService.submitForm(currentUser.id, this.curMonth, 2021, this.selectedCircle.code, null, this.selectedHead.code, this.dataArray)
     .subscribe(
       (res) => {
         console.log(res);

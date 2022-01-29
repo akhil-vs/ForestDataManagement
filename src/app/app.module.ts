@@ -20,6 +20,7 @@ import {DropdownModule} from 'primeng/dropdown';
 import {TreeTableModule} from 'primeng/treetable';
 import {PanelModule} from 'primeng/panel';
 import { TableModule } from 'primeng/table';
+import {CalendarModule} from 'primeng/calendar';
 
 import { FormsModule } from '@angular/forms';
 import { NodeService } from './nodeservice';
@@ -36,7 +37,8 @@ import { UsermanagementComponent } from './usermanagement/usermanagement.compone
         DropdownModule,
         TreeTableModule,
         PanelModule,
-        TableModule
+        TableModule,
+        CalendarModule
     ],
     declarations: [
         AppComponent,

@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
         private authenticationService: AuthenticationService
     ) { 
         // redirect to home if already logged in
+        // console.log("login");
         if (this.authenticationService.userValue) { 
             this.router.navigate(['/']);
         }

@@ -18,6 +18,9 @@ export class HomeComponent {
         private router: Router
     ) {
         this.user = this.authenticationService.userValue;
+        if(this.user == null) {
+            this.router.navigate(['login']);
+        }
     }
 
     ngOnInit() {
