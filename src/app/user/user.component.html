@@ -3,7 +3,7 @@
       <H4>Monthly Progreess Report</H4>
       <H4>Concurrent Evaluation and Monitoring Schemes
       <!-- <p-dropdown placeholder="Select Month" [options]="months" [(ngModel)]="selectedMonth" optionLabel="name"></p-dropdown> -->
-      <p-calendar [(ngModel)]="month" placeholder="Select Month" view="month" dateFormat="mm/yy" [readonlyInput]="true" inputId="monthpicker"></p-calendar></H4>
+      <p-calendar [(ngModel)]="month" placeholder="Select Month" view="month" dateFormat="mm/yy" [readonlyInput]="true" inputId="monthpicker" (onSelect)="resetPrimarySelection()"></p-calendar></H4>
     </div>
   </div>
   <hr>

@@ -16,6 +16,7 @@ import { coerceNumberProperty } from '@angular/cdk/coercion';
 export class UserComponent implements OnInit {
   month: Date;
   curMonth;
+  curYear;
   // selectedMonth: month | undefined;
 
   circles: Drops[];
@@ -88,22 +89,23 @@ export class UserComponent implements OnInit {
 
   setJson() {
     // debugger;
-    console.log(this.month, this.selectedCircle, this.selectedHead);
     if(this.month != undefined && this.selectedCircle != undefined && this.selectedHead != undefined) {
       this.showTable = true;
     }
     this.curMonth = this.month.getMonth();
+    this.curYear = this.month.getFullYear();
     let prevMonth = this.month.getMonth() == 0 ? 11 : this.month.getMonth() - 1;
-    this.apiService.getPrevMonth(prevMonth, 2021, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
+    let prevMonthYear = prevMonth == 11 ? (this.curYear - 1) : this.curYear;
+    this.apiService.getPrevMonth(prevMonth, prevMonthYear, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
       (res) => {
-        console.log(res);
+        console.log(prevMonth, res);
       }, (err) => {
         console.log(err);
       }
     );
-    this.apiService.getCurrentMonth(this.curMonth, 2021, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
+    this.apiService.getCurrentMonth(this.curMonth, this.curYear, this.selectedDivision ? this.selectedDivision.code : null, this.selectedCircle.code, this.selectedHead.code).subscribe(
       (res) => {
-        console.log(res);
+        console.log(this.curMonth,res);
       }, (err) => {
         console.log(err);
       }
@@ -187,6 +189,13 @@ export class UserComponent implements OnInit {
       }
     });
     console.log(this.dataArray)
+  }
+
+  resetPrimarySelection() {
+    this.selectedCircle = undefined;
+    this.selectedDivision = undefined;
+    this.selectedHead = undefined;
+    this.showTable = false;
   }
 }
 
