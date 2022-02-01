@@ -8,6 +8,8 @@ module.exports = {
     Account: require('../accounts/account.model'),
     Form: require('../forms/forms.model'),
     RefreshToken: require('../accounts/refresh-token.model'),
+    Circle: require('../circles/circles.model'),
+    HOA: require('../hoa/hoa.model'),
     isValidId
 };
 

@@ -11,13 +11,14 @@ module.exports = {
   currentUser,
   submitForm,
   getPrevMonth,
-  getCurrentMonth
+  getCurrentMonth,
+  getAllForms
 }
 
 async function currentUser() {
-  console.log("FormsService#15");
+  // console.log("FormsService#15");
   const detail = accountService.currentUser();
-  console.log(detail);
+  // console.log(detail);
   return detail;
 }
 
@@ -72,5 +73,18 @@ async function getCurrentMonth(params) {
   } else {
     let data = await db.Form.find({ year: parseInt(params.year), month: parseInt(params.month), circle: params.circle, hoa: params.hoa });
     return data.length ? data[0].data : [];
+  }
+}
+
+async function getAllForms() {
+  const detail = accountService.currentUser();
+  // console.log(detail);
+  if(detail.role == 'User') {
+    return false;
+  }
+  else {
+    let data = await db.Form.find();
+    // console.log(data);
+    return data.length ? data : [];
   }
 }

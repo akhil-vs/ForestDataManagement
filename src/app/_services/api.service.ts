@@ -31,5 +31,17 @@ export class ApiService {
       data: data
     })
   }
+  
+  getAllForms() {
+    return this.http.get(`${environment.apiUrl}/form/getAllForms`)
+  }
+
+  getAllCircles() {
+    return this.http.get(`${environment.apiUrl}/circle/getAllCircles`);
+  }
+  
+  getAllHoas() {
+    return this.http.get(`${environment.apiUrl}/hoa/getAllHoas`);
+  }
 
 }

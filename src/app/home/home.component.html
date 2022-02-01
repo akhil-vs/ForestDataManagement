@@ -1,13 +1,40 @@
 ﻿<div class="card mt-4">
     <h4 class="card-header">Home</h4>
     <div class="card-body">
-        <p>You're logged in with Angular 10 & JWT!!</p>
+        <!-- <p>You're logged in with Angular 10 & JWT!!</p>
         <p>Your role is: <strong>{{user.role}}</strong>.</p>
         <p>This page can be accessed by <u>all authenticated users</u>.</p>
         <p class="mb-1">Current user from secure api end point:</p>
         <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
         <ul *ngIf="userFromApi">
             <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
-        </ul>
+        </ul> -->
+        <p-table #dt1 [value]="allData" [globalFilterFields]="['user.name','circle','hoa', 'month', 'year', 'user.submit_date']">
+            <ng-template pTemplate="caption">
+                <div>
+                    <span class="p-input-icon-left ml-auto">
+                        <i class="pi pi-search"></i>
+                        <input pInputText type="text" (input)="dt1.filterGlobal($event.target.value, 'contains')" />
+                    </span>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th *ngFor="let col of cols" [pSortableColumn]="col.field" pResizableColumn pReorderableColumn>
+                        {{col.header}}
+                        <p-sortIcon [field]="col.field"></p-sortIcon>
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-data>
+                <tr>
+                    <td *ngFor="let col of cols">
+                        <span *ngIf="col.field !='name' && col.field !='submit_date'">{{data[col.field]}}</span>
+                        <span *ngIf="col.field == 'name'">{{data.user[col.field]}}</span>
+                        <span *ngIf="col.field == 'submit_date'">{{data.user[col.field]}}</span>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
     </div>
 </div>

@@ -9,6 +9,7 @@ const formsService = require('./forms.service');
 router.get('/prevmonth', getPreviousMonth);
 router.get('/currentmonth', getCurrentMonth);
 router.post('/submit', submitForm);
+router.get('/getAllForms', getAllForms);
 
 function getPreviousMonth(req, res, next) {
   console.log("TeacherController-getPreviousMonth");
@@ -54,6 +55,21 @@ function submitForm(req, res, next) {
     } else {
       console.log(result);
       res.send({ detail: "Data submitted successfully" })
+    }
+  })
+}
+
+function getAllForms(req, res, next) {
+  console.log("GetAllForms Controller");
+  formsService.getAllForms()
+  .then((result) => {
+    // console.log(result);
+    if(!result) {
+      res.status(403);
+      res.send({ detail: "You do not have the permission to perform this action" });
+    } else {
+      // console.log(result);
+      res.send(result)
     }
   })
 }
