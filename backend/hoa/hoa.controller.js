@@ -10,7 +10,6 @@ const hoaService = require('./hoa.service');
 router.get('/getAllHoas', getAllHoas);
 
 function getAllHoas(req, res, next) {
-    console.log("Inside getAllHoas()")
     hoaService.getAllHoas()
         .then(hoas => {res.send(hoas)})
         .catch(next);

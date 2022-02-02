@@ -12,9 +12,7 @@ router.post('/submit', submitForm);
 router.get('/getAllForms', getAllForms);
 
 function getPreviousMonth(req, res, next) {
-  console.log("TeacherController-getPreviousMonth");
-  console.log(req.query);
-  formsService.getPrevMonth(req.query)
+   formsService.getPrevMonth(req.query)
   .then(
     (result) => {
       if(!result) {
@@ -29,8 +27,6 @@ function getPreviousMonth(req, res, next) {
 }
 
 function getCurrentMonth(req, res, next) {
-  console.log("TeacherController-getCurrentMonth");
-  console.log(req.query);
   formsService.getCurrentMonth(req.query)
   .then(
     (result) => {
@@ -46,21 +42,18 @@ function getCurrentMonth(req, res, next) {
 }
 
 function submitForm(req, res, next) {
-  console.log("TeacherController-submitForm");
   formsService.submitForm(req.body)
   .then((result) => {
     if(!result) {
       res.status(403);
       res.send({ detail: "You do not have the permission to perform this action" });
     } else {
-      console.log(result);
       res.send({ detail: "Data submitted successfully" })
     }
   })
 }
 
 function getAllForms(req, res, next) {
-  console.log("GetAllForms Controller");
   formsService.getAllForms()
   .then((result) => {
     // console.log(result);

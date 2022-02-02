@@ -13,6 +13,5 @@ module.exports = {
 
 async function getAllCircles() {
     const allCircles = await db.Circle.find();
-    console.log(allCircles)
     return allCircles;
 }

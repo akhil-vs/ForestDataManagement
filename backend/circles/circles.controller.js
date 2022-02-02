@@ -10,7 +10,6 @@ const circleService = require('./circles.service');
 router.get('/getAllCircles', getAllCircles);
 
 function getAllCircles(req, res, next) {
-    console.log("Inside getAllCircles()")
     circleService.getAllCircles()
         .then(circles => {res.send(circles)})
         .catch(next);
